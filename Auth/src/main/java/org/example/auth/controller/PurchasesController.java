@@ -48,7 +48,6 @@ public class PurchasesController {
         ResponseEntity<Object> response = restTemplate.exchange(url, HttpMethod.GET, new HttpEntity<>(jsonHeaders()), Object.class);
         return response;
     }
-
     // GET /{purchaseId}
     @GetMapping("/{purchaseId}")
     public ResponseEntity<Object> getPurchaseById(@PathVariable String purchaseId) {

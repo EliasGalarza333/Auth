@@ -22,6 +22,7 @@ public class User implements UserDetails {
 
     private String username;
     private String password;
+    private String _id;
 
     // Puedes agregar más campos si quieres (email, nombre, etc.)
 
