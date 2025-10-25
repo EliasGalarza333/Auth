@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: auth-service
+    runtime: docker
+    repo: https://github.com/EliasGalarza333/Auth
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8080
